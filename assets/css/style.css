@@ -286,12 +286,6 @@ main {
   color: #01aa6c;
 }
 
-/* FOOTER */
-footer {
-  height: 100px;
-  background-color: aliceblue;
-}
-
 .like {
   background-color: white;
   /* border: blue solid 1px; */
@@ -325,4 +319,28 @@ footer {
 }
 .certif img {
   height: 40px;
+}
+
+/* FOOTER */
+footer {
+  height: 100px;
+  background-color: aliceblue;
+}
+
+/* MEDIA */
+
+@media (max-width: 1124px) {
+  header {
+    background-color: yellow;
+  }
+  .container {
+    width: 100%;
+  }
+  /* .left-header div {
+    width: 100%;
+  }
+  header > div {
+    display: flex;
+    justify-content: none;
+  } */
 }
