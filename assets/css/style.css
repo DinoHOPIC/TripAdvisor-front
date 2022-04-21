@@ -280,6 +280,7 @@ main {
 .proposition {
   margin: 0px 10px;
   flex-shrink: 0;
+  position: relative;
 }
 .a-solid fa-circle {
   color: #01aa6c;
@@ -293,10 +294,35 @@ footer {
 
 .like {
   background-color: white;
-  border: blue solid 1px;
+  /* border: blue solid 1px; */
   height: 40px;
   width: 40px;
   border-radius: 50%;
   position: absolute;
   top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.note {
+  color: #34e0a1;
+}
+
+.certif {
+  background-color: #34e0a1;
+  /* border: blue solid 1px; */
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 100px;
+  left: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.certif img {
+  height: 40px;
 }
