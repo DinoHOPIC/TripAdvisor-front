@@ -103,6 +103,9 @@ main {
 
 .menu {
   display: flex;
+  position: sticky;
+  top: 0px;
+  background-color: white;
 }
 
 .menu > div {
@@ -253,15 +256,22 @@ main {
   width: 842px;
   height: 300px;
   /* box-sizing: border-box; */
-  overflow-x: hidden;
+  overflow: hidden;
   overflow-x: scroll;
   flex: 3;
+  /* pour IE et Edge */
+  -ms-overflow-style: none;
+  /* pour Firefox */
+  scrollbar-width: none;
 }
 .text-left-carroussel {
   flex: 1;
 }
 .carroussel-proposition div {
   box-sizing: border-box;
+}
+.carroussel-proposition::-webkit-scrollbar {
+  display: none;
 }
 .proposition img {
   width: 270px;
@@ -271,12 +281,22 @@ main {
   margin: 0px 10px;
   flex-shrink: 0;
 }
-.carroussel-proposition::-webkit-scrollbar {
-  display: none;
+.a-solid fa-circle {
+  color: #01aa6c;
 }
 
 /* FOOTER */
 footer {
   height: 100px;
   background-color: aliceblue;
+}
+
+.like {
+  background-color: white;
+  border: blue solid 1px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
 }
